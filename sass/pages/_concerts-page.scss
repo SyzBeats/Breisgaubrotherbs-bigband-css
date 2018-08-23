@@ -1,0 +1,41 @@
+.concert-hero {
+  height: 80vh;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+  background-image: linear-gradient(to left, rgba($primary-color-light, 0.8), rgba($primary-color-dark, 0.8)),
+    url("https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-0.3.5&s=d4dac35debc1be18aef4f528d0665124&auto=format&fit=crop&w=1350&q=80");
+  background-position: center center;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.concert-claim {
+  background-color: $color-light-1;
+  height: calc(40vh - 3rem);
+  margin-top: -20vh;
+  padding-top: 30vh;
+  padding-bottom: 32rem;
+}
+.heading--animated {
+  animation: heading 3s;
+}
+.concert-gallery {
+  border-top: 1px solid $color-light-3;
+  padding: 2rem 0rem;
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  &--white {
+  }
+  &--light {
+    background-color: $color-light-1;
+  }
+  &__image {
+    object-fit: cover;
+    width: 100%;
+    height: 30vh;
+    border-radius: 3px;
+  }
+}

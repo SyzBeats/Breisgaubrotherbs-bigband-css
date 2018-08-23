@@ -1,0 +1,60 @@
+.concerts {
+  &--no-bg {
+    background-image: linear-gradient(to top, rgba($color-light-1, 0.7), rgba($color-light-2, 0.8));
+    border-top: 1px solid $color-light-3;
+    border-bottom: 1px solid $color-light-3;
+  }
+  position: relative;
+  background-image: linear-gradient(to right, rgba($primary-color-light, 0.2), rgba($primary-color-dark, 0.2)),
+    url("https://source.unsplash.com/random");
+  background-size: cover;
+  background-repeat: no-repeat;
+  &__content {
+    padding: 4rem;
+    width: 50%;
+    margin: 0 auto;
+    background-image: linear-gradient(to right, rgba($color-light-1, 0.75), rgba($color-light-2, 0.75));
+    box-shadow: 0rem 2rem 5rem rgba($color-dark-1, 0.4);
+    transform: skewX(8deg);
+    & > * {
+      transform: skewX(-8deg);
+    }
+    &:not(:last-child) {
+      margin-bottom: 8rem;
+    }
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+  }
+  &__image {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 100%;
+    margin: 0rem 2rem;
+  }
+  &__heading {
+    font-weight: 400;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin-bottom: 0.5rem;
+  }
+  &__link {
+    position: absolute;
+    top: 80%;
+    right: 3rem;
+    color: $primary-color-dark;
+    font-weight: 400;
+    font-size: 1.8rem;
+    span {
+      opacity: 0;
+      transition: opacity 0.4s;
+    }
+    &:hover {
+      span {
+        opacity: 1;
+      }
+    }
+  }
+}

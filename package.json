@@ -1,0 +1,14 @@
+{
+  "name": "natours-starter",
+  "version": "1.0.0",
+  "description": "Landing page ",
+  "main": "app.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Simeon Zimmermann",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "^4.9.0"
+  }
+}

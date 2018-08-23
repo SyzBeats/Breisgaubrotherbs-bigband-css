@@ -1,0 +1,28 @@
+body {
+  position: relative;
+}
+
+.section-members {
+  padding: 10rem 5rem;
+  min-height: 70vh;
+  background-color: $color-light-1;
+}
+.concerts {
+  min-height: 70vh;
+  padding: 10rem 5rem;
+}
+.music {
+  min-height: 65vh;
+}
+
+.grey-layer {
+  position: absolute;
+  width: calc(100% - 6rem);
+  height: calc(100% - 6rem);
+  background-color: $color-light-2;
+  z-index: -10;
+  top: 3rem;
+  left: 3rem;
+  border-left: 1px solid $color-light-3;
+  border-right: 1px solid $color-light-3;
+}

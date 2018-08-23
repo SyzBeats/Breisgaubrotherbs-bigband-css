@@ -1,0 +1,38 @@
+.btn {
+  display: block;
+  position: relative;
+  padding: 1rem 3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-weight: 400;
+  font-size: 2rem;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  background-color: $primary-color;
+  transition: all 0.2s;
+  color: $color-light-1;
+
+  &:hover {
+    cursor: pointer;
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 3rem rgba($color-dark-1, 0.5);
+  }
+  &:active {
+    transform: translate(0);
+  }
+  &--dark {
+    background-color: $secondary-color-light;
+    color: $color-light-1;
+    &::after {
+      background-color: $secondary-color-dark;
+    }
+  }
+  &--white {
+    background-color: $color-light-1;
+    color: $color-dark-1;
+    &::after {
+      background-color: $color-dark-2;
+    }
+  }
+}
